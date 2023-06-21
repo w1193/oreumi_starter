@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,initi">
+        <title>document</title>
+<head>
+</head>
+<body>
+    <form action="./result.html" method="get">
+        <fieldset>
+            <legend>교환 및 반품 신청</legend>
+    
+            <div>
+                <select name="type">
+                <option value="1">교환</option>
+                <option value="2">반품</option>
+                <option value="3">기타</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="username">성명 :</label>
+                <input type="text" name="username" placeholder="NAME" autocomplete="on" required>
+           </div>
+            <div>
+                <label for="userid">아이디 :</label>
+                <input type="text" name="userid" placeholder="ID" autocomplete="on" required>
+            </div>
+            <div>
+                 <label for="password">비밀번호 :</label>
+                 <input type="password" name="password_dawoon" placeholder="PWD" autocomplete="on" required>
+            </div>
+            <div>
+                <label for="age">나이 :</label>
+                <input type="number" name="age" min="0" max="100" step="1" autocomplete="off"> 
+            </div>
+            <div>
+                <label for="summary">내용 :</label>
+            </div>
+            <div>
+                <textarea name="summary" rows="20" cols="30" placeholder="교환 및 반품 내용 기재" style="text-align: center;"></textarea>
+            </div>
+            <div>
+                <label for="username">교환 및 반품 사유 :</label>
+                <input type="checkbox" name="type_2" value="mind">
+                <lable for="type_2">단순변심</lable>
+                <input type="checkbox" name="type_2" value="delivery">
+                <label for="type_2_2">배송오류</label>
+                <input type="checkbox" name="type_2" value="faulty">
+                <label for="type_2_3">불량</label>
+                <input type="checkbox" name="type_2" value="size">
+                <label for="type_2_3">사이즈 교환</label>
+            </div>
+            <div>
+                <label for="username">배송비 결제방법 :</label>
+                <input type="radio" name="type_3" value="prepayment">
+                <lable for="type_3_1">선결제</lable>
+                <input type="radio" name="type3" value="wire">
+                <label for="type_3_2">계좌입금</label>
+            </div>
+            <div>
+                <button type="submit">제출</button>
+        </div>              
+        </fieldset>
+    </form>
+</body>
+</html>
